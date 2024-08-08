@@ -1,0 +1,14 @@
+.main__privacy {
+  padding: 50px;
+}
+
+@media (max-width: 768px) {
+  .main__privacy {
+    padding: 10px;
+  }
+}
+
+.privacy__title {
+  font-size: 20px;
+  font-weight: 700;
+}

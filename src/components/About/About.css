@@ -1,0 +1,129 @@
+.about {
+  position: relative;
+  margin-top: 150px;
+  display: grid;
+  grid-template-columns: 60% 1fr;
+  align-items: center;
+  column-gap: 30px;
+}
+
+@media(max-width: 1199px) {
+  .about {
+    grid-template-columns: 1fr;
+    margin-right: 25px;
+  }
+}
+@media(max-width: 768px) {
+  .about {
+    margin-top: 100px;
+  }
+}
+@media(max-width: 600px) {
+  .about {
+    margin-right: 0px;
+  }
+}
+
+.about__title {
+  margin-bottom: 50px;
+  font-family: "Roboto", system-ui, -apple-system, sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+@media(max-width: 768px) {
+  .about__title {
+    text-align: left;
+    width: 220px;
+  }
+}
+@media(max-width: 600px) {
+  .about__title {
+    margin: 0 auto 50px;
+    text-align: center;
+  }
+}
+
+.about__content {
+  background-color: #FFEFC6;
+  padding: 30px 50px 60px 50px;
+  border-radius: 0 60px 60px 0;
+}
+
+@media(max-width: 600px) {
+  .about__content {
+    padding: 30px 0 50px;
+    border-radius: inherit;
+  }
+}
+
+.about__description {
+  max-width: 830px;
+  margin-left: auto;
+}
+.about__description div p {
+  margin-bottom: 15px;
+}
+.about__description p:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+@media(max-width: 600px) {
+  .about__description p {
+    padding: 0 30px;
+  }
+}
+.about__description b {
+  font-weight: 700;
+}
+
+.about__images {
+  background: url(../../images/airplane.svg) center / cover no-repeat;
+  position: absolute;
+  right: 20px;
+  z-index: -1;
+}
+
+.about__photo-inside {
+  display: none;
+}
+
+.about__photo-block {
+  overflow: hidden;
+  width: 400px;
+    height: 535px;
+}
+
+.about__photo {
+  width: 100%;
+  height: 100%;
+  transition: .5s;
+}
+
+.about__photo:hover {
+  transform: scale(1.2);
+}
+
+@media(max-width: 1199px) {
+  .about__images {
+    display: none;
+  }
+  .about__photo-inside {
+    display: block;
+    width: 240px;
+    float: right;
+    margin: 0 0 15px 30px;
+  }
+  .about__photo-block {
+    display: none;
+  }
+}
+
+@media(max-width: 600px) {
+  .about__photo-inside {
+    float: none;
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+}

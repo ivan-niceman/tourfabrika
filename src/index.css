@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url(./vendor/normalize.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Navigation/Navigation.css);
+@import url(./components/MobileNav/MobileNav.css);
+@import url(./components/Widget/Widget.css);
+@import url(./components/Visas/Visas.css);
+@import url(./components/Insurances/Insurances.css);
+@import url(./components/About/About.css);
+@import url(./components/Form/Form.css);
+@import url(./components/Footer/Footer.css);
+@import url(./components/ContactsMessage/ContactsMessage.css);
+@import url(./components/SocialIcons/SocialIcons.css);
+@import url(./components/Preloader/Preloader.css);
+
+* {
+  box-sizing: border-box;
+}
+
+.page {
+  font-family: "Montserrat", system-ui, -apple-system, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  min-width: 320px;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+@media(max-width: 475px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.logo {
+  width: 240px;
+  height: 95px;
+  object-fit: cover;
+}
+
+.nice-dev {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  transition: 0.3s;
+  width: fit-content;
+}
+
+.nice-dev:hover {
+  text-shadow: 0 0 10px #fff;
+  color: #fff;
+  text-decoration: none;
+}

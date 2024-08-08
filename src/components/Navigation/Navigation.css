@@ -1,0 +1,23 @@
+.header__menu .navigation {
+  max-width: 500px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  max-width: 560px;
+  width: 100%;
+}
+
+@media(max-width: 900px) {
+  .header .navigation {
+    display: none;
+  }
+}
+
+.navigation__link {
+  color: #fff;
+  font-weight: 600;
+}

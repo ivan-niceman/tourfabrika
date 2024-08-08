@@ -1,0 +1,45 @@
+.contacts-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, .3);
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 200;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+
+.active-form {
+  opacity: 1;
+  visibility: visible;
+}
+
+.contacts-message {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border-radius: 15px;
+  background-color: #fff;
+  max-height: 500px;
+  height: 100%;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 15px;
+}
+
+.contacts-message img {
+  width: calc((100vw - 320px) / (1280 - 320) * (120 - 90) + 90px);
+}
+
+.contacts-info {
+  font-size: 32px;
+  font-size: calc((100vw - 320px) / (1280 - 320) * (40 - 24) + 24px);
+  color: #0383CB;
+}

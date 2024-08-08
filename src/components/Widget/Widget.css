@@ -1,0 +1,24 @@
+.widget {
+  background: url(../../images/background.webp) center / cover no-repeat;
+  width: 100%;
+  min-height: 700px;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.widget .container {
+  width: 100%;
+}
+
+@media(max-width: 425px) {
+  .widget .container {
+    padding: 0 35px;
+  }
+}
+
+.widget__search {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
